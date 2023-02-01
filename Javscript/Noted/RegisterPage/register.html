@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="shortcut icon" type="image/x-icon" href="../Images/feather_logo.png" />
+          <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase.js"></script>
+          <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+          <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-database.js"></script>
+          <link rel="stylesheet" href="register.css">
+          <script src="register.js" type="module"></script>
+          <title>Sign Up</title>
+     </head>
+     <body>
+          <div class="container">
+               <div class="sign-up-form">
+                    <div class="title">Sign Up</div>
+                    <div class="fullname">
+                         <div class="fullname-title">Full Name</div>
+                         <input type="text" placeholder="Full Name"
+                              class="fullname-input" required>
+                    </div>
+                    <div class="username">
+                         <div class="username-title">Username</div>
+                         <input type="text" placeholder="Username"
+                              class="username-input" required>
+                    </div>
+                    <div class="email-address">
+                         <div class="email-address-title">Email Address</div>
+                         <input type="email" placeholder="email@address.com"
+                              class="email-address-input" required>
+                    </div>
+                    <div class="password">
+                         <div class="password-title">Password</div>
+                         <input type="password" placeholder="Create Password(Min. 8 characters)"
+                              class="password-input" required minlength="8">
+                    </div>
+                    <div class="signup-button">
+                         <input type="submit" class="signup" value="Sign Up">
+                    </div>
+                    <div class="login-button">
+                         <input type="button" class="login" value="Sign In">
+                    </div>
+                    <span class="policy-agreement">
+                         By continuing, you agree to Noted's
+                         <a class="TOS">Terms of Service</a>
+                         and
+                         <a class="PP">Privacy Policy</a>.
+                    </span>
+               </div>
+          </div>
+     </body>
+</html>

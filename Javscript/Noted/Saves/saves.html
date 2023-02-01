@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <link href="saves.css" rel="stylesheet">
+          <script
+               src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css'
+               rel="stylesheet">
+          <link rel="shortcut icon" type="image/x-icon"
+               href="../Images/feather_logo.png" />
+          <script src="saves.js" type="module"></script>
+          <title>Saved Blogs</title>
+     </head>
+     <body>
+          <!--!! Sidebar !!-->
+          <div class="sidebar">
+               <div class="logo-content">
+                    <div class="logo">
+                         <img src="../Images/feather_logo.png" class="icon"
+                              alt="feather_logo">
+                         <div data-text="Noted" class="logo-name"></div>
+                    </div>
+                    <i class="bx bx-menu" id="btn"></i>
+               </div>
+               <ul class="nav-list">
+                    <li>
+                         <a href="#" class="dashboard">
+                              <i class='bx bx-grid-alt'></i>
+                              <span class="links-name">Dashboard</span>
+                         </a>
+                         <span class="tooltip dashboard">Dashboard</span>
+                    </li>
+                    <li>
+                         <a href="#" class="profile">
+                              <i class='bx bxs-user'></i>
+                              <span class="links-name">Profile</span>
+                         </a>
+                         <span class="tooltip">Profile</span>
+                    </li>
+                    <li>
+                         <a href="#" class="myblogs">
+                              <i class='bx bx-news'></i>
+                              <span class="links-name">My Blogs</span>
+                         </a>
+                         <span class="tooltip">My Blogs</span>
+                    </li>
+                    <li>
+                         <a href="#" class="groups">
+                              <i class='bx bx-group'></i>
+                              <span class="links-name">Groups</span>
+                         </a>
+                         <span class="tooltip">Groups</span>
+                    </li>
+                    <li>
+                         <a href="#" class="following">
+                              <i class='bx bx-user-plus'></i>
+                              <span class="links-name">Following</span>
+                         </a>
+                         <span class="tooltip">Following</span>
+                    </li>
+                    <li>
+                         <a href="#" class="saved">
+                              <i class='bx bx-bookmark'></i>
+                              <span class="links-name">Saved</span>
+                         </a>
+                         <span class="tooltip">Saved</span>
+                    </li>
+                    <li>
+                         <a href="#" class="settings">
+                              <i class='bx bxs-cog'></i>
+                              <span class="links-name">Settings</span>
+                         </a>
+                         <span class="tooltip">Settings</span>
+                    </li>
+                    <li>
+                         <a href="#" class="post">
+                              <i class='bx bx-plus'></i>
+                              <span class="links-name">New Blog</span>
+                         </a>
+                         <span class="tooltip">New Blog</span>
+                    </li>
+               </ul>
+          </div>
+
+          <!--!! All The Saved Blogs !!-->
+          <div class="page-content">
+               <div class="bar">
+                    <span class="title">
+                         Saved Blogs
+                    </span>
+                    <span class="search">
+                         <i class='bx bx-search-alt' id="glass"></i>
+                         <input type="search" class="search-input"
+                              placeholder="Search...">
+                    </span>
+                    <div class="dropdown">
+                         <div class="select">
+                              <span>Show All</span>
+                              <i class="fa fa-chevron-left"></i>
+                         </div>
+                         <input type="hidden" name="type">
+                         <ul class="dropdown-menu">
+                              <li id="blog">Show All</li>
+                              <li id="blog">Blog</li>
+                              <li id="story">Story</li>
+                              <li id="recommendation">Recommendation</li>
+                              <li id="review">Review</li>
+                         </ul>
+                    </div>
+               </div>
+               <div class="blogs">
+               </div>
+          </div>
+          <div class="circle1"></div>
+          <div class="circle2"></div>
+          <div class="circle3"></div>
+          <div class="circle4"></div>
+          <div class="circle5"></div>
+          <div class="circle6"></div>
+          <div class="circle7"></div>
+     </body>
+</html>

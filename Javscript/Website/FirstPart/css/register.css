@@ -1,0 +1,249 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+main{
+     min-height: 100vh;
+     background: linear-gradient(to right top, 
+     #324C52,
+     #A1E4E9);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-family: "Poppins", sans-serif;
+     
+}
+
+h2{
+     color: #658ec6;
+     font-weight: 500;
+     opacity: 0.8;
+}
+
+.webpage{
+     background-color: white;
+     height: 80vh;
+     width: 60%;
+     background: linear-gradient(to right bottom,
+     rgba(255, 255, 255, 0.7),
+     rgba(255, 255, 255, 0.3));
+     border-radius: 2rem;
+     display: flex;
+}
+
+.navigation{
+     flex: 1;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+     background: linear-gradient(to right bottom,
+     rgba(255, 255, 255, 0.7),
+     rgba(255, 255, 255, 0.3));
+     border-radius: 2rem;
+}
+
+/* Links Images Start*/
+.profile-image{
+     width: 100%;
+     height: 90%;
+     margin-top: 1rem;
+}
+
+.login-image{
+     width: 30%;
+     height: 30%;
+}
+
+.register-image{
+     width: 25%;
+     height: 25%;
+     margin-left: 10px;
+}
+
+.home-image{
+     width: 30%;
+     height: 30%;
+     margin-left: 5px;
+}
+/* Links Images End */
+/* Links Texts Start */
+.login-text{
+     font-size: 60px;
+}
+
+.register-text{
+     font-size: 60px;
+}
+
+.home-text{
+     font-size: 60px;
+}
+/*Links Texts End*/
+
+#home{
+     margin-top: 2rem;
+}
+.link{
+     display: flex;
+     margin: 2rem 0rem;
+     padding: 1rem 3rem;
+     align-items: center;
+     border-radius: 1rem;
+     user-select:none;
+}
+
+.link:hover{
+     cursor: pointer;
+     box-shadow: 6px 6px 25px rgba(122, 122, 122, 0.7);
+}
+
+.link h2{
+     padding: 0rem 1rem;
+}
+
+.web-content{
+     flex: 1.5;
+     margin: 5rem;
+     display: flex;
+     flex-direction: column;
+}
+
+.register-title{
+     font-size: 60px;
+     text-align: center;
+     color: #2a2d31;
+     font-weight: 600;
+     opacity: 0.8;
+     border-bottom: 10px dotted #2a2d31;
+     user-select: none;
+}
+
+.username:not(.error){
+     display: flex;
+     margin-top: 17.2rem;
+}
+
+.username{
+     display: flex;
+     margin-top: 4rem;
+}
+
+.active{
+     display: block;
+     font-size: 25px;
+     margin: 50px 0 0 0;
+     border: 6px solid red; 
+}
+
+.username input{
+     background: linear-gradient(to right bottom,
+     rgba(255, 255, 255, 1),
+     rgba(255, 255, 255, 0.5));
+     border: none;
+     width: 60%;
+     line-height: 2rem;
+     padding: 0.5rem;
+     border-radius: 0.5rem;
+     margin-left: 4rem;
+     font-size: 25px;
+     outline: none;
+}
+.email{
+     display: flex;
+     margin-top: 2rem;
+}
+
+.email input{
+     background: linear-gradient(to right bottom,
+     rgba(255, 255, 255, 1),
+     rgba(255, 255, 255, 0.5));
+     border: none;
+     width: 60%;
+     line-height: 2rem;
+     padding: 0.5rem;
+     border-radius: 0.5rem;
+     margin-left: 8.6rem;
+     font-size: 25px;
+     outline: none;
+}
+
+.password{
+     display: flex;
+     margin-top: 2rem;
+}
+
+.password input{
+     background: linear-gradient(to right bottom,
+     rgba(255, 255, 255, 1),
+     rgba(255, 255, 255, 0.5));
+     border: none;
+     width: 60%;
+     line-height: 2rem;
+     padding: 0.5rem;
+     border-radius: 0.5rem;
+     margin-left: 4.5rem;
+     font-size: 25px;
+     outline: none;
+}
+
+.register-form-header{
+     font-size: 30px;
+     color: #2a2d31;
+     font-weight: 300;
+     opacity: 0.8;
+     user-select:none;
+}
+
+.register-button{
+     width: 100%;
+     margin-top: 2rem;
+     height: 4rem;
+     border: none;
+     border-radius: 2rem;
+     font-size: 40px;
+     font-family: "Poppins", sans-serif;
+     color: grey;
+     background: linear-gradient(to right bottom,
+     rgba(255, 255, 255, 0.7),
+     rgba(255, 255, 255, 0.3));
+     outline: none;
+     font-weight: 500;
+     transition: ease-out 0.3s;
+     box-shadow: 6px 6px 20px #2a2d31;
+     position: relative;
+     z-index: 1;
+}
+
+.register-button:hover{
+     color: grey;
+     cursor: pointer;
+     box-shadow: 6px 6px 20px white;
+}
+
+.register-button:before{
+     transition: 0.5s all ease;
+     position: absolute;
+     top: 0;
+     left: 50%;
+     right: 50%;
+     bottom: 0;
+     opacity: 0;
+     content: "";
+     background-color: #2a2d31;
+     border-radius: 2rem;
+}
+
+.register-button:hover:before{
+     transition: 0.5s all ease;
+     left: 0;
+     right: 0;
+     opacity: 1;
+     z-index: -1;
+}
+
+.register-button:active{
+     box-shadow: 6px 6px 20px #2a2d31;
+}

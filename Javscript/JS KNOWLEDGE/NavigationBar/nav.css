@@ -1,0 +1,52 @@
+#navigation {
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+     background-color: #333;
+     width: 100%;
+}
+
+#nav-content{
+     float: left;
+}
+
+#nav-content #nav-location, .dropbtn-games, .dropbtn-html, .dropbtn-expl{
+     display: inline-block;
+     color: white;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+}
+
+#nav-content #nav-location:hover, .games:hover .dropbtn-games, .html:hover .dropbtn-html, .expl:hover .dropbtn-expl{
+     box-shadow: 0px 8px 16px 0px  rgba(255,255,255, 1);
+}
+
+li.games, li.html, li.expl{
+     display: inline-block;
+}
+
+.games-content, .html-content, .expl-content{
+     display: none;
+     position: absolute;
+     background-color: #f9f9f9;
+     min-width: 160px;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+     z-index: 1;
+}
+
+.games-content a, .html-content a, .expl-content a {
+     color: black;
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+     text-align: left;
+}
+   
+.games-content a:hover, .html-content a:hover, .expl-content a:hover {
+     background-color: #f1f1f1;
+}
+   
+.games:hover .games-content, .html:hover .html-content, .expl:hover .expl-content{
+     display: block;
+}

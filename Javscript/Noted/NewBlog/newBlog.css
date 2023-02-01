@@ -1,0 +1,198 @@
+.body{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.blogTitleAndType{
+  margin-left: 5%;
+  margin-top: 4%;
+  display: flex;
+}
+
+textarea:focus,
+input:focus {
+  outline: 0;
+}
+
+/* BlogTitle */
+input.blogTitle,
+textarea.blogTitle {
+  font-size: 48px;
+  font-weight: 300;
+  border-radius: 2px;
+  border: none;
+  width: 150%;
+  background: rgba(0, 0, 0, 0);
+  transition: padding-top 0.2s ease, margin-top 0.2s ease;
+  overflow-x: hidden; /* Hack to make "rows" attribute apply in Firefox. */
+}
+
+/* Underline and Placeholder */
+input.blogTitle + label,
+textarea.blogTitle + label {
+  display: block;
+  position: relative;
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
+  width: 10%;
+  border-top: 1px solid rgb(65, 65, 65);
+  -webkit-transition: width 0.4s ease;
+  transition: width 0.4s ease;
+  height: 0px;
+}
+
+input.blogTitle:focus + label,
+textarea.blogTitle:focus + label {
+  width: 150%;
+}
+
+input.blogTitle:focus,
+input.blogTitle:valid {
+  padding-top: 35px;
+}
+
+textarea.blogTitle:valid,
+textarea.blogTitle:focus {
+  margin-top: 35px;
+}
+
+input.blogTitle:focus + label > span,
+input.blogTitle:valid + label > span {
+  top: -100px;
+  font-size: 22px;
+  color: #333;
+}
+
+textarea.blogTitle:focus + label > span,
+textarea.blogTitle:valid + label > span {
+  top: -150px;
+  font-size: 22px;
+  color: #333;
+}
+
+input.blogTitle:invalid,
+textarea.blogTitle:invalid {
+  box-shadow: none;
+}
+
+input.blogTitle + label > span,
+textarea.blogTitle + label > span {
+  font-weight: 300;
+  margin: 0;
+  position: absolute;
+  color: #8F8F8F;
+  font-size: 48px;
+  top: -66px;
+  left: 0px;
+  z-index: -1;
+  -webkit-transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+  transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+}
+
+/* select form*/
+.postType{
+  margin-left: 45%;
+}
+
+.type{
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.dropdown {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 0 6px 0 rgb(27, 27, 27);
+  transition: all .5s ease;
+  font-size: 30px;
+  position: relative;
+  margin-top: 2%;
+  color: #757575;
+  text-align: left;
+  outline: none;
+}
+.dropdown .select {
+  cursor: pointer;
+  display: block;
+  padding: 10px;
+}
+
+.dropdown .select > i {
+  font-size: 13px;
+  color: #757575;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  float: right;
+  line-height: 20px;
+}
+.dropdown:hover {
+  box-shadow: 0 0 4px rgb(204, 204, 204)
+}
+.dropdown:active {
+  background-color: #f8f8f8;
+}
+.dropdown.active:hover,
+.dropdown.active {
+  box-shadow: 0 0 4px rgb(204, 204, 204);
+  border-radius: 2px 2px 0 0;
+  background-color: #f8f8f8;
+}
+.dropdown.active .select > i {
+  transform: rotate(-90deg);
+}
+.dropdown .dropdown-menu {
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  left: 0;
+  margin-top: 5px;
+  box-shadow: 0 1px 2px rgb(204, 204, 204);
+  border-radius: 0 1px 2px 2px;
+  overflow-y: scroll;
+  display: none;
+  max-height: 200px;
+  z-index: 9;
+}
+
+.dropdown .dropdown-menu::-webkit-scrollbar {
+  display: none;
+}
+
+.dropdown .dropdown-menu li {
+  padding: 10px;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+  background-color: white;
+  color: #000000;
+} 
+.dropdown .dropdown-menu li:nth-child(2n) {
+  background-color: #1d1d1d;
+  color: white;
+  padding: 10px;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+} 
+.dropdown .dropdown-menu {
+  padding: 0;
+  list-style: none;
+}
+.dropdown .dropdown-menu li:hover {
+  background-color: #aaaaaa;
+}
+
+/* Text */
+.postText{
+  height: 50px;
+  line-height: 2;
+}
+
+.toolbar{
+  font-size: 20px;
+}
+
+.toolbar span{
+
+}

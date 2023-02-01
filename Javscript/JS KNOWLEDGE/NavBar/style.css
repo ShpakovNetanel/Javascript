@@ -1,0 +1,46 @@
+body{
+     background-color: #24252A;
+}
+.navbar{
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+}
+
+.navbar-item{
+     float: left;
+}
+
+.navbar-item a{
+     display: block;
+     color: white;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+}
+
+.navbar-item:not(#register, #login) a:hover:not(.active){
+     background-color: #552;
+     border-radius: 25px;
+
+}
+
+.active{
+     background-color: #999;
+     border-radius: 25px;
+}
+
+#login, #register {
+     float: right;
+     background-color: rgb(76, 76, 182);
+     border-radius: 50px;
+}
+
+#login:hover, #register:hover {
+     background-color: blue;
+     border-radius: 50px;
+}
+
+
+

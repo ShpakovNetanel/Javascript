@@ -1,0 +1,127 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+main{
+     min-height: 100vh;
+     background: linear-gradient(to right top, 
+     #324C52,
+     #A1E4E9);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-family: "Poppins", sans-serif;
+     
+}
+
+h2{
+     color: #658ec6;
+     font-weight: 500;
+     opacity: 0.8;
+}
+
+.webpage{
+     background-color: white;
+     min-height: 80vh;
+     width: 60%;
+     background: linear-gradient(to right bottom,
+     rgba(255, 255, 255, 0.7),
+     rgba(255, 255, 255, 0.3));
+     border-radius: 2rem;
+     display: flex;
+}
+
+.navigation{
+     flex: 1;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+     background: linear-gradient(to right bottom,
+     rgba(255, 255, 255, 0.7),
+     rgba(255, 255, 255, 0.3));
+     border-radius: 2rem;
+}
+
+/* Links Images Start*/
+.profile-image{
+     width: 100%;
+     height: 90%;
+     margin-top: 1rem;
+}
+
+.login-image{
+     width: 30%;
+     height: 30%;
+}
+
+.register-image{
+     width: 25%;
+     height: 25%;
+     margin-left: 10px;
+}
+
+.home-image{
+     width: 30%;
+     height: 30%;
+     margin-left: 5px;
+}
+/* Links Images End */
+/* Links Texts Start */
+.login-text{
+     font-size: 60px;
+}
+
+.register-text{
+     font-size: 60px;
+}
+
+.home-text{
+     font-size: 60px;
+}
+/*Links Texts End*/
+
+#home{
+     margin-top: 2rem;
+}
+
+.link{
+     display: flex;
+     margin: 2rem 0rem;
+     padding: 1rem 3rem;
+     align-items: center;
+     border-radius: 1rem;
+     user-select:none;
+}
+
+.link:hover{
+     cursor: pointer;
+     box-shadow: 6px 6px 25px rgba(122, 122, 122, 0.7);
+}
+
+.link h2{
+     padding: 0rem 1rem;
+}
+
+.web-content{
+     flex: 1.85;
+     
+}
+
+.greeting{
+     text-align: center;
+     font-size: 40px;
+     margin-top: 60px;
+     font-weight: bold;
+     text-decoration: underline;
+}
+
+.information{
+     font-size: 40px;
+     text-align: center;
+     margin-top: 10%;
+     font-family: "Poppins";
+     font-weight: 600;
+}

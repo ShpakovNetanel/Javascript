@@ -1,0 +1,16 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+.background{
+     margin-top: 4%;
+     margin-left: 2%;
+}
+
+.purple-board{
+     background: rgba(133, 133, 248, 0.6);     
+     max-width: 95%;
+     max-height: 80%;
+}

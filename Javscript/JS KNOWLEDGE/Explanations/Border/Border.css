@@ -1,0 +1,57 @@
+#dotted{
+     border-style: dotted;
+}
+#dashed {
+     border-style: dashed ;
+}
+#solid {
+     border-style: solid ;
+}
+#double {
+     border-style: double ;
+}
+#groove {
+     border-style: groove ;
+}
+#ridge {
+     border-style: ridge ;
+}
+#inset {
+     border-style: inset ;
+}
+#outset{
+     border-style: outset;
+}
+#none  {
+     border-style: none  ;
+}
+#hidden {
+     border-style: hidden ;
+}
+#mix {
+     border-style: dotted dashed solid double;
+}
+#width-px{
+     border-style: dashed;
+     border-width: 5px;
+}
+#width-medium{
+     border-style: dashed;
+     border-width: medium;
+}
+#width-thick{
+     border-style: dashed;
+     border-width: thick;
+}
+#width-thin{
+     border-style: dashed;
+     border-width: thin;
+     border-color: blue;
+}
+#border{
+     border: 5px solid black;
+}
+#border-radius{
+     border: 2px solid gray;
+     border-radius: 5px;
+}

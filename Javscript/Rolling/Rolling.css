@@ -1,0 +1,59 @@
+h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, small {
+
+     margin: 0;
+   
+     padding: 0;
+   
+     border: 0;
+   
+     outline: 0;
+   
+     font-size: 100%;
+   
+     background: transparent;
+     
+ }
+ 
+   
+   /* Make the nav take up the whole body width, and give it some top and bottom margin space */
+   
+nav {
+   
+     width: 100%;
+   
+     margin: 20px 0;
+     background: green;
+
+     
+     
+}
+   
+   /* Make the list of links take up the whole width of the nav */
+   
+ nav ul {
+   
+     width: 100%; 
+ 
+     list-style: none;
+ 
+     margin: 0;
+ 
+     padding: 0; 
+     
+ }
+ 
+ nav ul li {
+ 
+     width: 20%;
+ 
+     float: left;
+
+ }
+   
+ nav ul li a {
+   
+     display: block;
+   
+     width: 100%; 
+     
+ }

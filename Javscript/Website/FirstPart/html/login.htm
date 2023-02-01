@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="../css/login.css" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap" rel="stylesheet">
+     <script src="../js/login.js" defer></script>
+     <title>Login</title>
+</head>
+<body>
+     <main>
+          <section class="webpage">
+               <div class="navigation">
+                    <div class="user">
+                         <img src="../Images/logo.PNG" class="profile-image" alt=""/>
+                    </div>
+                    <section id="link-section">
+                         <div class="links">
+                              <div class="link" id="home">
+                                   <img src="../Images/home-icon.png" class="home-image" alt=""/>
+                                   <h2 class="home-text">Home</h2>
+                              </div>
+                              <div class="link" id="login">
+                                   <img src="../Images/login-icon.jpg" class="login-image" alt=""/>
+                                   <h2 class="login-text">Login</h2>
+                              </div>
+                              <div class="link" id="register">
+                                   <img src="../Images/register-icon.jpg" class="register-image" alt=""/>
+                                   <h2 class="register-text">Register</h2>
+                              </div>
+                         </div>
+                    </section>
+               </div>
+               <div class="web-content">
+                    <section class="login-form">
+                         <h1 class="login-title">Login form</h1>
+                         <span id="error"></span>
+                         <div class="email" id="email">
+                              <h1 class="login-form-header">Email: </h1>
+                              <input type="email" id="email-login">
+                         </div>
+                         <div class="password">
+                              <h1 class="login-form-header">Password: </h1>
+                              <input type="password" id="password-login">
+                         </div>
+                         <div>
+                              <button class="login-button" id="login-button" type="submit">Login</button>
+                         </div>
+                    </section>
+               </div>
+          </section>
+     </main>
+
+     <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+
+     <script>
+          const firebaseConfig = {
+               apiKey: "AIzaSyAUx7tpjWZx0h1cK_6FG-f8l1wXgMNG6kA",
+               authDomain: "website-ab93b.firebaseapp.com",
+               databaseURL: "https://website-ab93b-default-rtdb.firebaseio.com",
+               projectId: "website-ab93b",
+               storageBucket: "website-ab93b.appspot.com",
+               messagingSenderId: "578368736759",
+               appId: "1:578368736759:web:dfa8083ffe50cd628472f2",
+          }
+
+          firebase.initializeApp(firebaseConfig)
+
+          document.getElementById('login-button').addEventListener('click', loginUser)
+
+          function loginUser(){
+               const emailInput = document.getElementById('email-login').value
+               const passwordInput = document.getElementById('password-login').value
+               const error = document.getElementById('error')
+               const email = document.getElementById('email')
+               error.textContent = ''
+               error.classList.remove("active")
+               email.classList.remove("error")
+               if(emailInput !== "" && emailInput.includes('@') 
+                    && emailInput.includes('.') && emailInput.indexOf('@') < 
+                    emailInput.indexOf('.') && passwordInput.length > 6){
+                    firebase.auth().signInWithEmailAndPassword(emailInput, passwordInput).
+                    then(function(resp){
+                         window.location.replace("http://127.0.0.1:5500/SecondPart/index.htm")
+                    }).catch(e=>{
+                              console.log(e)
+                         })
+                    firebase.auth().onAuthStateChanged(user => {
+                         if(user){
+                              console.log(user) 
+                         }
+                    })
+               } if(emailInput.length === 0){
+                    error.textContent += 'Email is missing.'
+                    error.classList.add("active")
+                    email.classList.add("error")
+               } else if(!emailInput.includes('@') || !emailInput.includes('.') 
+                    || emailInput.indexOf('@') > emailInput.indexOf('.') ){
+                    error.textContent += 'Please correct your email.'
+                    error.classList.add("active")
+                    email.classList.add("error")
+               } if(passwordInput.length < 6){
+                    error.innerHTML += '<br />Please make sure that your password length is longer than 6 characters.'
+                    error.classList.add("active")
+                    email.classList.add("error")
+               } firebase.auth().fetchSignInMethodsForEmail(emailInput)
+                    .then((signInMethods) => {
+                         if(signInMethods.length == 0){
+                              error.textContent += 'Email in not registered.'
+                              error.classList.add("active")
+                              email.classList.add("error")
+                         }
+                    })
+          }
+
+     </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(36, 37, 42, 1);
+}
+
+#navbarList, #navbarLink, .registration-dropdown{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+.dropdown-button {
+    background-color: rgba(95,158,160, 1);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.registration-dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(255,255,255, 1);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {background-color: #ddd;}
+  
+.registration-dropdown:hover .dropdown-content {display: block;}
+  
+.registration-dropdown:hover .dropdown-button {background-color: rgba(72,209,204, 0.2);}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo{
+    cursor: pointer;
+    height: 100px;
+}
+
+.navLinks{
+    list-style: none;
+    
+}
+
+.navLinks li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navLinks li a {
+    transition: all 0.3s ease 0s;
+}
+
+#navbarList a:hover{
+    box-shadow: 0px 8px 16px 0px  rgba(255,255,255, 1);
+}

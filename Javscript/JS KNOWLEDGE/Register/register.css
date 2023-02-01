@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Playfair+Display&family=Sen&display=swap');
+body{
+     background: #C9CED3;
+     font-family: 'Sen', sans-serif;
+}
+
+.container{
+     display: flex;
+     justify-content: center;
+     margin-top: 8%;
+}
+
+.sign-up{
+     background-color: white;
+     height: 72vh;
+     width: 28%;
+     border-radius: 10px;
+     box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+}
+
+.title{
+     display: flex;
+     justify-content: center;
+     margin-top: 20px;
+     font-size: 40px;
+     font-weight: 600;
+}
+
+.fullname{
+     margin-top: 5%;
+     margin-left: 5%;     
+
+}
+
+.fullname-title{
+     font-size: 20px;
+     color: rgba(0, 0, 0, 0.8);
+     letter-spacing: 2px;
+}
+
+.fullname-input{
+     width: 90%;
+     margin-top: 2px;
+     line-height: 35px;
+     border-radius: 4px;
+     font-size: 17px;
+     border: 2px solid red;
+}
+
+.phone-number{
+     margin-top: 2%;
+     margin-left: 5%;     
+
+}
+
+.phone-number-title{
+     font-size: 20px;
+     color: rgba(0, 0, 0, 0.8);
+     letter-spacing: 2px;
+}
+
+.phone-number-input{
+     margin-top: 2px;
+     width: 90%;
+     line-height: 35px;
+     border-radius: 4px;
+     font-size: 17px;
+     border: 2px solid red;
+}
+.email-address{
+     margin-top: 2%;
+     margin-left: 5%;     
+
+}
+
+.email-address-title{
+     font-size: 20px;
+     color: rgba(0, 0, 0, 0.8);
+     letter-spacing: 2px;
+}
+
+.email-address-input{
+     margin-top: 2px;
+     width: 90%;
+     line-height: 35px;
+     border-radius: 4px;
+     font-size: 17px;
+     border: 2px solid red;
+}
+.website-url{
+     margin-top: 2%;
+     margin-left: 5%;     
+
+}
+
+.website-url-title{
+     font-size: 20px;
+     color: rgba(0, 0, 0, 0.8);
+     letter-spacing: 2px;
+}
+
+.website-url-input{
+     margin-top: 2px;
+     width: 90%;
+     line-height: 35px;
+     border-radius: 4px;
+     font-size: 17px;
+     border: 2px solid red;
+}
+.password{
+     margin-top: 2%;
+     margin-left: 5%;     
+
+}
+
+.password-title{
+     font-size: 20px;
+     color: rgba(0, 0, 0, 0.8);
+     letter-spacing: 2px;
+}
+
+.password-input{
+     margin-top: 2px;
+     width: 90%;
+     line-height: 35px;
+     border-radius: 4px;
+     font-size: 17px;
+     border: 2px solid red;
+}
+.confirm-password{
+     margin-top: 2%;
+     margin-left: 5%;     
+
+}
+
+.confirm-password-title{
+     font-size: 20px;
+     color: rgba(0, 0, 0, 0.8);
+     letter-spacing: 2px;
+}
+
+.confirm-password-input{
+     margin-top: 2px;
+     width: 90%;
+     line-height: 35px;
+     border-radius: 4px;
+     font-size: 17px;
+     border: 2px solid red;
+}
+
+.register-button{
+     margin-top: 5%;
+     display: flex;
+     justify-content: center;
+     
+}
+
+.register{
+     width: 90%;
+     height: 62px;
+     outline: none;
+     background-color: black;
+     color: white;
+     border-radius: 5px;
+     font-size: 23px;
+     letter-spacing: 3px;
+     font-family: 'Sen', sans-serif;
+}
+
+.dont-hesitate{
+     border: 2px solid black;
+     width: 90%;
+     margin-left: 5%;
+     margin-top: 3%;
+     border-radius: 5px;
+     display: flex;
+     justify-content: center;
+}
+
+.dh-title{
+     font-size: 22px;
+     font-weight: 600;
+     letter-spacing: 3px;
+     padding-top: 20px;
+     padding-bottom: 20px;
+}

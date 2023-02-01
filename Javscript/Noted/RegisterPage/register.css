@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Playfair+Display&family=Sen&display=swap');
+body{
+     background: #C9CED3;
+     font-family: 'Sen', sans-serif;
+     user-select: none; 
+}
+
+.container{
+     display: flex;
+     justify-content: center;
+     margin-top: 8%;
+}
+
+.sign-up-form{
+     background-color: white;
+     height: 72vh;
+     width: 28%;
+     border-radius: 10px;
+     box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+}
+
+.title{
+     display: flex;
+     justify-content: center;
+     margin-top: 20px;
+     font-size: 40px;
+     font-weight: 600;
+     border-left: 4px solid #000;
+     border-right: 4px solid #000;
+     margin-left: 20%;
+     margin-right: 20%;
+}
+
+.fullname{
+     margin-top: 8%;
+     margin-left: 5%;     
+}
+
+.fullname-title{
+     font-size: 20px;
+     font-weight: 700;
+     color: rgba(0, 0, 0, 0.8);
+     letter-spacing: 2px;
+}
+
+.fullname-input{
+     width: 93%;
+     margin-top: 2px;
+     line-height: 35px;
+     border-radius: 4px;
+     font-size: 17px;
+     border: 3px solid black;
+     font-family: 'Sen';
+}
+
+.username{
+     margin-top: 2%;
+     margin-left: 5%;     
+
+}
+
+.username-title{
+     font-size: 20px;
+     color: rgba(0, 0, 0, 0.8);
+     letter-spacing: 2px;
+}
+
+.username-input{
+     margin-top: 2px;
+     width: 93%;
+     line-height: 35px;
+     border-radius: 4px;
+     font-size: 17px;
+     border: 3px solid black;
+     font-family: 'Sen';
+}
+.username{
+     margin-top: 4%;
+     margin-left: 5%;     
+
+}
+
+.username-title{
+     font-size: 20px;
+     font-weight: 700;
+     color: rgba(0, 0, 0, 0.8);
+     letter-spacing: 2px;
+}
+
+.email-address{
+     margin-top: 4%;
+     margin-left: 5%;     
+
+}
+
+.email-address-title{
+     font-size: 20px;
+     font-weight: 700;
+     color: rgba(0, 0, 0, 0.8);
+     letter-spacing: 2px;
+}
+
+.email-address-input{
+     margin-top: 2px;
+     width: 93%;
+     line-height: 35px;
+     border-radius: 4px;
+     font-size: 17px;
+     border: 3px solid black;
+     font-family: 'Sen';
+}
+
+.password{
+     margin-top: 4%;
+     margin-left: 5%;     
+
+}
+
+.password-title{
+     font-size: 20px;
+     font-weight: 700;
+     color: rgba(0, 0, 0, 0.8);
+     letter-spacing: 2px;
+}
+
+.password-input{
+     margin-top: 2px;
+     width: 93%;
+     line-height: 35px;
+     border-radius: 4px;
+     font-size: 17px;
+     border: 3px solid black;
+}
+
+.login-button{
+     margin-top: 3%;
+     display: flex;
+     justify-content: center;
+     
+}
+
+.login{
+     width: 90%;
+     height: 62px;
+     background-color: black;
+     color: white;
+     border-radius: 5px;
+     font-size: 23px;
+     letter-spacing: 3px;
+     font-family: 'Sen', sans-serif;
+     border: none;
+     cursor: pointer;
+}
+
+.signup-button{
+     margin-top: 10%;
+     display: flex;
+     justify-content: center;
+     
+}
+
+.signup{
+     width: 90%;
+     height: 62px;
+     background-color: black;
+     color: white;
+     border-radius: 5px;
+     font-size: 23px;
+     letter-spacing: 3px;
+     font-family: 'Sen', sans-serif;
+     border: none;
+     cursor: pointer;
+}
+
+.policy-agreement{
+     margin-top: 2%;
+     display: table;
+     max-width: 450px;
+     text-align: center;
+     margin-left: 12%;
+     font-size: 15px;
+}
+
+.policy-agreement a{
+     color:rgba(98, 0, 255, 0.4);
+     font-size: 18px;
+}
+
+.TOS:hover{
+     border-bottom: 1px solid rgba(98, 0, 255, 0.4);
+     cursor: pointer;
+}
+
+.PP:hover{
+     border-bottom: 1px solid rgba(98, 0, 255, 0.4);
+     cursor: pointer;
+}
+

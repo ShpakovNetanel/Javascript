@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="newBlog.js" type="module"></script>
+    <link href="newBlog.css" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="../Images/feather_logo.png" />
+
+    <title>New Post</title>
+  </head>
+  <body>
+    <div class="body">
+      <div class="leftSide">
+        <div class="blogTitleAndType">
+          <div class="title-input">
+            <input type="text" name="name" class="blogTitle" id="nme" required
+              autocomplete="off"/>
+            <label for="nme"><span>Your Post's Title</span></label>
+          </div>
+        </div>
+        <div name="postContent" class="postContent" contenteditable>
+          Type any text here and the bubble will grow to fit the text no matter how many lines.  Isn't that nifty?
+        </div>
+      </div>
+      <div class="rightSide">
+        <div class="story-box">
+          <input type="checkbox" class="story-checkbox">
+          <label for="Story">Story</label>
+        </div>
+        <div class="blog-box">
+          <input type="checkbox" class="blog-checkbox">
+          <label for="Blog">Blog</label>
+        </div>
+        <div class="recommendation-box">
+          <input type="checkbox" class="recommendation-checkbox">
+          <label for="Recommendation">Recommendation</label>
+        </div>
+        <div class="review-box">
+          <input type="checkbox" class="review-checkbox">
+          <label for="Review">Review</label>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

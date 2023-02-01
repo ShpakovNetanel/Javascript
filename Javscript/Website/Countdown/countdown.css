@@ -1,0 +1,58 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: "Poppins", sans-serif;
+}
+
+body{
+     background: linear-gradient(to bottom right,
+     rgb(158, 158, 158),
+     white);
+}
+
+h2{
+     font-size: 5rem;
+     font-weight: bold;
+     padding: 3rem;
+     background: linear-gradient(to bottom left,
+     #5d51a1,
+     rgb(158, 108, 108));
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;  
+}
+
+.timer{
+     display: flex;
+     min-height: 100vh;
+     align-items: center;
+     flex-direction: column;
+     justify-content: center;
+}
+
+.timer-container{
+     justify-content: center;
+     border-bottom: 8px solid black;
+     border-right: 8px solid black;
+     border-left: 8px solid rgb(126, 126, 126);
+     border-top: 8px solid rgb(126, 126, 126);
+     padding: 15rem;
+     background: linear-gradient(to left top,
+     rgb(0, 0, 0),
+     rgb(126, 126, 126));
+}
+
+.countdown{
+     display: flex;
+     justify-content: space-between;
+     text-align: center;
+     background: linear-gradient(to bottom left,
+     #a597f6,
+     rgb(241, 195, 195));
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent; 
+}
+
+.day, .hour, .minute, .second{
+     font-size: 3rem;
+}

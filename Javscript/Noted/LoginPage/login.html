@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-database.js"></script>
+     <link href="login.css" rel="stylesheet">
+     <script src="login.js" type="module"></script>
+     <link rel="shortcut icon" type="image/x-icon" href="../Images/feather_logo.png" />
+     <title>Sign In</title>
+</head>
+<body>
+     <div class="container">
+          <div class="log-in">
+               <div class="title">Sign In</div>
+               <div class="email-address">
+                    <div class="email-address-title">Email Address</div>
+                    <input type="email" placeholder="Email@address.com" class="email-address-input" required>
+               </div>
+               <div class="password">
+                    <div class="password-title">Password</div>
+                    <input type="password" placeholder="Create Password(Min. 8 characters)" class="password-input" required>
+               </div>
+               <div class="login-button">
+                    <input type="submit" class="login" value="Sign In">
+               </div>
+               <div class="reset-button">
+                    <a class="reset">Forgot My Password</a>
+               </div>
+               <div class="signup-button">
+                    <input type="submit" class="signup" value="Sign Up">
+               </div>
+          </div>
+     </div>
+</body>
+</html>
