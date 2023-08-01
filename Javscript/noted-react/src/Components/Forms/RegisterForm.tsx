@@ -11,7 +11,7 @@ export default function RegisterForm() {
     <div className="LoginForm">
       <div className="container">
         <div className="log-in">
-          <Title title="Sign In" />
+          <Title title="Sign Up" />
 
           <div className="input-section">
             <Input
@@ -29,10 +29,10 @@ export default function RegisterForm() {
           </div>
 
           <div className="button-section">
-            <Button value="Log In" />
+            <Button value="Sign Up" />
             <HyperText text="Forgot My Password" href="/" className="reset" />
             <Link to="/signup" relative="path">
-              <Button value="Sign Up" />
+              <Button value="Log in" link="/login" />
             </Link>
           </div>
         </div>

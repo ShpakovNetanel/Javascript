@@ -2,6 +2,11 @@
      opacity: 1;
 }
 
+.open .header{
+     display: flex;
+     flex-direction: row;
+}
+
 .header .logo {
      font-size: 2rem;
      margin-right: 0.3rem;
@@ -60,7 +65,7 @@
 }
 
 .collapsed .menu_button {
-     margin-top: 1.8rem;
+     margin-top: 1.4rem;
      position: absolute;
      color: #010101;
      left: 50%;
@@ -80,6 +85,7 @@
      width: 3rem;
      transform: translateX(-50%);
      left: 90%;
+     margin-top: 1.4rem;
 }
 
 .collapsed .menu_button:hover {

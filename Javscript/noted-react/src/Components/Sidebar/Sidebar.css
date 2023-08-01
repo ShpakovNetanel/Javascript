@@ -6,7 +6,6 @@
      width: 5rem;
      background: #cfcfcf;
      padding: 0.3rem 1rem;
-     transition: all 0.5s ease;
 }
 
 .open {
@@ -17,5 +16,5 @@
      width: 20rem;
      background: #cfcfcf;
      padding: 0.3rem 1rem;
-     transition: all 0.5s ease;
+     transition: all 0.5s ease-out;
 }

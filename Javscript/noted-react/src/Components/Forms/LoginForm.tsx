@@ -1,5 +1,4 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
 import "./LoginForm.css";
 import { Input } from "../HTML _tags/Input.tsx";
 import { Button } from "../HTML _tags/Button.tsx";
@@ -31,7 +30,7 @@ export default function LoginForm() {
           <div className="button-section">
             <Button value="Log In" />
             <HyperText text="Forgot My Password" href="/" className="reset" />
-            <Button value="Sign Up" />
+            <Button value="Sign Up" link="/register" />
           </div>
         </div>
       </div>

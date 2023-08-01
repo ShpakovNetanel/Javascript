@@ -1,9 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Playfair+Display&family=Sen&display=swap');
-body{
-     background: #C9CED3;
-     font-family: 'Sen', sans-serif;
-}
-
 .container{
      display: flex;
      justify-content: center;
@@ -12,7 +7,7 @@ body{
 
 .log-in{
      background-color: white;
-     height: 80vh;
+     height: 30rem;
      width: 30.5rem;
      border-radius: 10px;
      box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
