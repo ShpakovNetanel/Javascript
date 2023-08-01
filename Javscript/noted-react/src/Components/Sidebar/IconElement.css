@@ -1,0 +1,83 @@
+.page_icon {
+     margin-right: 1rem;
+}
+
+.collapsed .icon_package .icon_element {
+     position: relative;
+     cursor: pointer;
+     list-style: none;
+     height: 3rem;
+     margin: 1rem 0rem;
+     line-height: 3rem;
+     font-size: 2rem;
+     font-weight: 100;
+}
+
+.open .icon_package .icon_element {
+     position: relative;
+     padding-left: 1rem;  
+     list-style: none;
+     height: 3rem;
+     margin: 1rem 0rem;
+     line-height: 3rem;
+     font-size: 2rem;
+     font-weight: 100;
+}
+
+.open .sidebar_navigator:hover {
+     background: #fff;
+     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+     border-radius: 0.6rem;
+}
+
+
+.collapsed .icon_package .icon_element .tooltip {
+     position: absolute;
+     left: 9rem;
+     transform: translate(-50%, -50%);
+     border-radius: 0.4rem;
+     height: 2.5rem;
+     width: 10rem;
+     background: #fff;
+     line-height: 2.5rem;
+     text-align: center;
+     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+     transition: 0s;
+     opacity: 0;
+}
+
+.open .icon_package .icon_element .tooltip {
+     display: none;
+}
+
+.collapsed .icon_package .icon_element:hover .tooltip {
+     top: 50%;
+     transition: all 0.5s ease;
+     opacity: 1;
+}
+
+.collapsed .icon_package .icon_element .sidebar_navigator:hover {
+     color: #11101d;
+     background: #fff;
+     border-radius: 0.25rem;
+}
+
+.collapsed .icon_package .icon_element .sidebar_navigator {
+     height: 3rem;
+     min-width: 3rem;
+     border-radius: 0.8rem;
+     line-height: 3rem;
+     font-size: 2rem;
+     margin-left: 0.4rem;
+}
+
+.open .page_text {
+     opacity: 1;
+     pointer-events: auto;
+     transition: linear 3s;
+}
+
+.collapsed .page_text {
+     opacity: 0;
+     pointer-events: none;
+}

@@ -1,0 +1,18 @@
+
+.button{
+     margin-top: 1rem;
+     padding: 0 1rem;
+}
+
+.input-button{
+     width: 28rem;
+     height: 4rem;
+     background-color: black;
+     color: white;
+     border-radius: 0.25rem;
+     font-size: 1.5rem;
+     letter-spacing: 0.2rem;
+     font-family: 'Sen', sans-serif;
+     border: none;
+     cursor: pointer;
+}

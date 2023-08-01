@@ -1,0 +1,21 @@
+.input{
+     margin-top: 2rem;
+     padding: 0 1rem;     
+}
+
+.input-title{
+     font-size: 1.25rem;
+     font-weight: 700;
+     color: rgba(0, 0, 0, 0.8);
+     letter-spacing: 0.125rem;
+}
+
+.input-value{
+     margin-top: 0.125rem;
+     width: 28rem;
+     line-height: 2.1rem;
+     border-radius: 0.25rem;
+     font-size: 1.1rem;
+     border: 0.2rem solid black;
+     font-family: 'Sen';
+}

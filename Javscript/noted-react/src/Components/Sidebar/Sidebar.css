@@ -1,0 +1,21 @@
+.collapsed {
+     position: fixed;
+     top: 0;
+     left: 0;
+     height: 100%;
+     width: 5rem;
+     background: #cfcfcf;
+     padding: 0.3rem 1rem;
+     transition: all 0.5s ease;
+}
+
+.open {
+     position: fixed;
+     top: 0;
+     left: 0;
+     height: 100%;
+     width: 20rem;
+     background: #cfcfcf;
+     padding: 0.3rem 1rem;
+     transition: all 0.5s ease;
+}

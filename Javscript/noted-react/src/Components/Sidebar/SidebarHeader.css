@@ -1,0 +1,87 @@
+.open .header .logo {
+     opacity: 1;
+}
+
+.header .logo {
+     font-size: 2rem;
+     margin-right: 0.3rem;
+     margin-top: 1.8rem;
+     margin-left: 0.3rem;
+}
+
+.header .logo .title {
+     font-size: 2rem;
+     font-weight: 400;
+     -webkit-text-stroke: 0.3vw #000000;
+}
+
+.title::before {
+     content: attr(data-text);
+     position: absolute;
+     top: 0.5rem;
+     left: 3rem;
+     color: rgb(255, 255, 255);
+     -webkit-text-stroke: 0vw #383d52;
+     overflow: hidden;
+     animation: animate 10s linear infinite;
+     margin-top: 1.5rem;
+     margin-left: 2.5rem;
+}
+
+@keyframes animate {
+
+     0%,
+     10%,
+     100% {
+          width: 0;
+     }
+
+     70% {
+          width: 100%;
+          color: #fff;
+     }
+
+     75% {
+          color: #11101d;
+     }
+
+     80% {
+          color: #fff;
+     }
+
+     85% {
+          color: #11101d;
+     }
+
+     90% {
+          color: #fff;
+     }
+
+}
+
+.collapsed .menu_button {
+     margin-top: 1.8rem;
+     position: absolute;
+     color: #010101;
+     left: 50%;
+     height: 3rem;
+     width: 3rem;
+     transform: translateX(-50%);
+}
+
+.collapsed .header .logo {
+     display: none;
+}
+
+.open .menu_button {
+     position: absolute;
+     color: #010101;
+     height: 3rem;
+     width: 3rem;
+     transform: translateX(-50%);
+     left: 90%;
+}
+
+.collapsed .menu_button:hover {
+     cursor: pointer;
+}

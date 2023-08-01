@@ -1,0 +1,9 @@
+.collapsed .icon_package {
+     margin-top: 11rem;
+}
+
+
+.open .icon_package {
+     margin-top: 11rem;
+     cursor: pointer;
+}

@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Playfair+Display&family=Sen&display=swap');
+body{
+     background: #C9CED3;
+     font-family: 'Sen', sans-serif;
+}
+
+.container{
+     display: flex;
+     justify-content: center;
+     margin-top: 5%;
+}
+
+.log-in{
+     background-color: white;
+     height: 80vh;
+     width: 30.5rem;
+     border-radius: 10px;
+     box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+}
+
+.title{
+     display: flex;
+     justify-content: center;
+     margin-top: 1.25rem;
+     font-size: 2.5rem;
+     font-weight: 600;
+     border-left: 0.25rem solid #000;
+     border-right: 0.25rem solid #000;
+     margin: 1.25rem 2rem;
+}

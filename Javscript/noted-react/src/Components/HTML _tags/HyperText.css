@@ -1,0 +1,17 @@
+.hyper_text-button{
+     margin-top: 1%;
+     display: flex;
+     justify-content: center;
+     text-align: center;
+}
+
+.hyper_text{
+     font-size: 1rem;
+     letter-spacing:0.125rem;
+     font-family: 'Sen', sans-serif;
+     cursor: pointer;
+}
+
+.hyper_text:hover{
+     font-size: 1.2rem;
+}
