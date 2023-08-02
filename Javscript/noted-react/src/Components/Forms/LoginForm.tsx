@@ -4,7 +4,7 @@ import { Input } from "../HTML _tags/Input.tsx";
 import { Button } from "../HTML _tags/Button.tsx";
 import { HyperText } from "../HTML _tags/HyperText.tsx";
 import { Title } from "../HTML _tags/Title.tsx";
-
+import { Router } from "react-router-dom";
 export default function LoginForm() {
   return (
     <div className="LoginForm">
@@ -28,7 +28,7 @@ export default function LoginForm() {
           </div>
 
           <div className="button-section">
-            <Button value="Log In" />
+            <Button value="Log In" link="login"/>
             <HyperText text="Forgot My Password" href="/" className="reset" />
             <Button value="Sign Up" link="/register" />
           </div>
