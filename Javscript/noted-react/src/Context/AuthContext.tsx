@@ -1,11 +1,11 @@
 import React, { createContext, useContext, useState } from "react";
 
 const AuthContext = createContext<AuthState>({
-  isAuthed: false,
+  isAuthed: true,
   setIsAuthed: () => {},
 });
 
-export const AuthContextProvider: React.FC = ({ children }) => {
+export const AuthContextProvider: React.FC = ({ children }: React.reactNode ) => {
   const [isAuthed, setIsAuthed] = useState<boolean>(false);
 
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import './IconElement.css'
 
-export function IconELement(props) {
+export default function IconELement(props) {
   return (
     <li className="icon_element">
       <div className="sidebar_navigator">

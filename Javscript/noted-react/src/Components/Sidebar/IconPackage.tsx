@@ -1,10 +1,10 @@
 import React from "react";
-import { IconELement } from "./IconElement.tsx";
+import IconELement from "./IconElement.tsx";
 import { BiSolidDashboard, BiSolidGroup } from "react-icons/bi"
 import { BsFillPersonFill, BsCardList, BsFillPersonPlusFill, BsFillBookmarkHeartFill } from "react-icons/bs"
 import './IconPackage.css'
 
-export function IconPackage() {
+export default function IconPackage() {
   return (
     <ul className="icon_package">
       <IconELement element="Dashboard" component={<BiSolidDashboard className="page_icon"/>} />

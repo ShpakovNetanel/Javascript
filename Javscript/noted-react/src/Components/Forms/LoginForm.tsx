@@ -1,10 +1,9 @@
 import React from "react";
 import "./LoginForm.css";
-import { Input } from "../HTML _tags/Input.tsx";
-import { Button } from "../HTML _tags/Button.tsx";
-import { HyperText } from "../HTML _tags/HyperText.tsx";
-import { Title } from "../HTML _tags/Title.tsx";
-import { Router } from "react-router-dom";
+import Input from "../HTML _tags/Input.tsx";
+import Button from "../HTML _tags/Button.tsx";
+import HyperText from "../HTML _tags/HyperText.tsx";
+import Title from "../HTML _tags/Title.tsx";
 export default function LoginForm() {
   return (
     <div className="LoginForm">
@@ -17,18 +16,18 @@ export default function LoginForm() {
               title="Email Address"
               placeholder="email@address.com"
               type="email"
-              required="true"
+              required={true}
             />
             <Input
               title="Password"
               placeholder="Create Password(Min. 8 characters)"
               type="password"
-              required="true"
+              required={true}
             />
           </div>
 
           <div className="button-section">
-            <Button value="Log In" link="login"/>
+            <Button value="Log In" link="/login"/>
             <HyperText text="Forgot My Password" href="/" className="reset" />
             <Button value="Sign Up" link="/register" />
           </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Input.css";
 
-export function Input(props) {
+export default function Input(props) {
   return (
     <div className="input">
       <div className="input-title">{props.title}</div>
